@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdbool.h": "c",
+        "cpu.h": "c",
+        "sitech_json.h": "c",
+        "main.h": "c",
+        "modbus_master_mfm384.h": "c",
+        "function_system.h": "c",
+        "type_traits": "c",
+        "gateway.h": "c"
+    }
+}
