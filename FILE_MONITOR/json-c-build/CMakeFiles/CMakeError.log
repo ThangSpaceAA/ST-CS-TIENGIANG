@@ -1,0 +1,195 @@
+Determining if the include file xlocale.h exists failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d8546/fast && /usr/bin/make -f CMakeFiles/cmTC_d8546.dir/build.make CMakeFiles/cmTC_d8546.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8546.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d8546.dir/CheckIncludeFile.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xlocale.h: No such file or directory
+ #include <xlocale.h>
+          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_d8546.dir/build.make:66: CMakeFiles/cmTC_d8546.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d8546/fast] Error 2
+
+
+
+Determining if the _isnan exist failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_04682/fast && /usr/bin/make -f CMakeFiles/cmTC_04682.dir/build.make CMakeFiles/cmTC_04682.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04682.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_04682.dir/CheckSymbolExists.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_isnan’ undeclared (first use in this function)
+   return ((int*)(&_isnan))[argc];
+                   ^~~~~~
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_04682.dir/build.make:66: CMakeFiles/cmTC_04682.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_04682/fast] Error 2
+
+
+File /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _isnan
+  return ((int*)(&_isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _finite exist failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_34473/fast && /usr/bin/make -f CMakeFiles/cmTC_34473.dir/build.make CMakeFiles/cmTC_34473.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34473.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_34473.dir/CheckSymbolExists.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_finite’ undeclared (first use in this function)
+   return ((int*)(&_finite))[argc];
+                   ^~~~~~~
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_34473.dir/build.make:66: CMakeFiles/cmTC_34473.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_34473/fast] Error 2
+
+
+File /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _finite
+  return ((int*)(&_finite))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _doprnt exist failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d9883/fast && /usr/bin/make -f CMakeFiles/cmTC_d9883.dir/build.make CMakeFiles/cmTC_d9883.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9883.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d9883.dir/CheckSymbolExists.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_doprnt’ undeclared (first use in this function); did you mean ‘fdopen’?
+   return ((int*)(&_doprnt))[argc];
+                   ^~~~~~~
+                   fdopen
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_d9883.dir/build.make:66: CMakeFiles/cmTC_d9883.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d9883/fast] Error 2
+
+
+File /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _doprnt
+  return ((int*)(&_doprnt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b117e/fast && /usr/bin/make -f CMakeFiles/cmTC_b117e.dir/build.make CMakeFiles/cmTC_b117e.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b117e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_b117e.dir/CheckSymbolExists.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘arc4random’ undeclared (first use in this function); did you mean ‘srandom’?
+   return ((int*)(&arc4random))[argc];
+                   ^~~~~~~~~~
+                   srandom
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_b117e.dir/build.make:66: CMakeFiles/cmTC_b117e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b117e/fast] Error 2
+
+
+File /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file bsd/stdlib.h exists failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_177ff/fast && /usr/bin/make -f CMakeFiles/cmTC_177ff.dir/build.make CMakeFiles/cmTC_177ff.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_177ff.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_177ff.dir/CheckIncludeFile.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: bsd/stdlib.h: No such file or directory
+ #include <bsd/stdlib.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_177ff.dir/build.make:66: CMakeFiles/cmTC_177ff.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_177ff/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAS_GNU_WARNING_LONG failed with the following output:
+Change Dir: /home/pi/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_78003/fast && /usr/bin/make -f CMakeFiles/cmTC_78003.dir/build.make CMakeFiles/cmTC_78003.dir/build
+make[1]: Entering directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78003.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -DHAS_GNU_WARNING_LONG -fPIE   -o CMakeFiles/cmTC_78003.dir/src.c.o   -c /home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c:3:9: warning: missing terminating " character
+ __asm__(".section .gnu.json_object_get
+         ^
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c:3:9: error: missing terminating " character
+ __asm__(".section .gnu.json_object_get
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c:4:2: error: expected string literal before ‘.’ token
+  .ascii "Please link against libjson-c instead of libjson"
+  ^
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c:5:7: warning: missing terminating " character
+  .text");
+       ^
+/home/pi/json-c-build/CMakeFiles/CMakeTmp/src.c:5:7: error: missing terminating " character
+  .text");
+       ^~~
+make[1]: *** [CMakeFiles/cmTC_78003.dir/build.make:66: CMakeFiles/cmTC_78003.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/pi/json-c-build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_78003/fast] Error 2
+
+
+Source file was:
+
+extern void json_object_get();
+__asm__(".section .gnu.json_object_get
+	.ascii "Please link against libjson-c instead of libjson"
+	.text");
+int main(int c, char *v) { return 0;}
+
