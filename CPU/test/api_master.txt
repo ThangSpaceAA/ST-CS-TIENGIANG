@@ -1,0 +1,9 @@
+POST: https://api.toptrendvn.xyz/device
+Body: {
+"deviceId": "string",
+  	"password": "string"
+}
+
+
+curl -X POST https://api.toptrendvn.xyz/device
+   -d '{"deviceId": GW-016D5481, "password": 112233445566}'  
